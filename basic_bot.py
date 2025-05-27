@@ -2,6 +2,9 @@ while True:
     msg=input("You : ")
     if "hello" in msg.lower():
         print("Bot : Hi there. How are you?")
+    
+    elif "hi" in msg.lower():
+        print("Bot : Hi there. How are you?")
     elif "fine" in msg.lower():
         print("Bot : Good")
     elif "what about you" in msg.lower():
