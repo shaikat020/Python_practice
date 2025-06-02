@@ -7,6 +7,7 @@ def convert_currency(amount, from_currency, to_currency):
 
 amount= float(input("Enter the amount to convert : "))
 
+
 from_currency= input("Enter the currency to convert from : ").upper()
 
 to_currency= input("Enter the currency to convert from : ").upper()
