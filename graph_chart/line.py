@@ -19,7 +19,7 @@ for i in range(n):
     y.append(yi)
 
 plt.plot(x,y)
-plt.title('Line chart')
+plt.title(chart_title)
 plt.xlabel(x_label)
 plt.ylabel(y_label)
 plt.show()
