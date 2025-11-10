@@ -62,3 +62,6 @@ google-auth==2.40.3
 google-genai==1.28.0
 
 python-dotenv==1.1.1
+
+# translate.py
+translators==6.0.1

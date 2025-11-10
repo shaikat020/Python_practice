@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>contact</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'contact/css/style.css' %}">
+    </head>
+    <body>
+        <h1>Contact List</h1>
+        <a href = "{% url 'add_contact' %}">Add new contact</a>
+        <ul>
+            {% for contact in contacts %}
+            <li>
+                {{contact.name}} - {{contact.email}} - {{contact.phone}} - 
+                <a href = "{% url 'edit_contact' contact.id %}">Edit Contact</a>
+                <a href = "{% url 'delete_contact' contact.id %}">Delete</a>
+            <li>
+            {% empty %}
+            <li>No contact found</li>
+            {% endfor %}
+        </ul>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
